@@ -1,15 +1,14 @@
-/* Navbar styles */
 .navbar-custom {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(19, 19, 19, 0.8); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect */
+  background: rgba(19, 19, 19, 0.8);
+  backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
-color: white;
+  color: white;
 }
 
 .navbar-container {
@@ -23,7 +22,7 @@ color: white;
 }
 
 .menu-toggle {
-  display: none; /* Hidden for larger screens */
+  display: none;
   background: none;
   border: none;
   font-size: 1.2rem;
@@ -88,12 +87,11 @@ color: white;
 }
 
 .btn-post {
-  background: #c50766; /* Pink color */
+  background: #c50766;
   border: none;
   color: white;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
