@@ -1,23 +1,20 @@
-/* General Section Styling */
 .section-two {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* Maintain uniform gap */
+    gap: 1rem;
     padding: 2rem;
-    background-color: #000; /* Single background color */
-    justify-content: center; /* Center content on all screen sizes */
+    background-color: #000;
+    justify-content: center;
 }
 
-/* Container for Images */
 .section-two-container {
     display: flex;
     gap: 1.2rem;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
-/* Large Image Styling */
 .large-image {
     flex: none;
     width: 35rem;
@@ -38,19 +35,18 @@
 }
 
 .large-image:hover img {
-    transform: scale(0.97); /* Slight zoom effect on hover */
+    transform: scale(0.97);
 }
 
 .large-image:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Grid Images Styling */
 .grid-images {
     flex: 3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* Adjust dynamically */
-    gap: 1rem; /* Uniform spacing */
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1rem;
     width: 100%;
     justify-items: center;
 }
@@ -74,14 +70,13 @@
 }
 
 .grid-item:hover img {
-    transform: scale(0.97); /* Slight zoom effect on hover */
+    transform: scale(0.97);
 }
 
 .grid-item:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Button Inside Image */
 .grid-item .discover-button {
     position: absolute;
     bottom: 10px;
@@ -100,12 +95,12 @@
 
 .grid-item:hover .discover-button {
     opacity: 1;
-    transform: translateX(-50%) translateY(-10px); /* Slightly move up */
+    transform: translateX(-50%) translateY(-10px);
 }
 
 .grid-item .overlay-content {
     position: absolute;
-    bottom: 40px;  /* Adjust the space above the button */
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -115,16 +110,14 @@
     transition: opacity 0.3s ease;
 }
 
-/* Show Content and Button on Hover */
 .grid-item:hover .overlay-content {
     opacity: 1;
 }
 
 .grid-item:hover .discover-button {
-    background: #e60072; /* Change the button color on hover */
+    background: #e60072;
 }
 
-/* Overlay Content Styling */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -166,9 +159,6 @@
     transform: scale(1.05);
 }
 
-/* Responsive Media Queries */
-
-/* For tablets and medium-sized devices */
 @media (max-width: 768px) {
     .section-two {
         padding: 1rem;
@@ -186,7 +176,6 @@
     }
 }
 
-/* For mobile devices */
 @media (max-width: 480px) {
     .section-two {
         flex-direction: column;
@@ -201,7 +190,7 @@
     }
 
     .grid-images {
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* Single column for small screens */
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 
     .grid-item {
