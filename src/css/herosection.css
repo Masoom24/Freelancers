@@ -2,76 +2,73 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    color: white; /* White text for contrast */
+    color: white;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 0 5%;
-    overflow: hidden; /* Prevents scrolling issues with large video */
-  }
-  
-  .hero-video {
+    overflow: hidden;
+}
+
+.hero-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  /* Overlay */
-  .hero-overlay {
+}
+
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with opacity */
-    z-index: 0; /* Places the overlay above the video but below the content */
-  }
-  
-  
-  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    z-index: 1; /* Keeps content above the video */
-  }
-  
-  .hero-left {
+    z-index: 1;
+}
+
+.hero-left {
     flex: 1;
     max-width: 50%;
-    margin-top: 20px; /* Space from top */
-  }
-  
-  .hero-title {
-    font-size: 3rem; /* Large font for the main title */
+    margin-top: 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 20px; /* Space below the title */
-    line-height: 1.2; /* Better readability */
-  }
-  
-  /* List Styling */
-  .hero-bullets {
-    list-style-type: disc; /* Adds bullets */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-bullets {
+    list-style-type: disc;
     margin: 0;
-    padding-left: 20px; /* Indent for bullets */
-    margin-bottom: 20px; /* Space below the list */
-  }
-  
-  .hero-bullets li {
-    font-size: 1rem; /* Adjust font size */
-    margin-bottom: 10px; /* Space between items */
-    color: white; /* White text color */
-  }
-  
-  .hero-buttons {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-bullets li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hero-buttons {
     display: flex;
-    gap: 10px; /* Space between buttons */
-  }
-  
-  .btn-pink {
-    background-color: #cb0869; /* Pink button */
+    gap: 10px;
+}
+
+.btn-pink {
+    background-color: #cb0869;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -79,27 +76,24 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .btn-pink:hover {
-    background-color: #ff4593; /* Darker pink on hover */
-  }
-  
-  .btn-transparent {
-    background-color: transparent; /* Transparent button */
-    border: 2px solid white; /* White border */
+}
+
+.btn-pink:hover {
+    background-color: #ff4593;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: 2px solid white;
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .btn-transparent:hover {
+}
+
+.btn-transparent:hover {
     background-color: white;
-    color: black; /* Black text on hover */
-  }
-  
-  /* Vertical Line */
- 
+    color: black;
+}
