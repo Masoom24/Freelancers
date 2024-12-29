@@ -1,127 +1,120 @@
-/* Section container with background image */
 .new-component {
-   
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents image repetition */
-    min-height: 100vh; /* Ensures the section covers the full viewport height */
-    width: 100%; /* Ensures the section spans the full viewport width */
-    display: flex; /* Flexbox for centering content */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; 
-    padding: 20px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     margin: 0;
     box-sizing: border-box;
     background-color: black;
 }
 
-/* Image Gallery Section */
 .image-gallery {
     display: flex;
-    flex-wrap: wrap; /* Ensures images wrap in smaller screens */
-    justify-content: center; /* Centers images horizontally */
-    gap: 20px; /* Space between images */
-    margin-bottom: 2rem; /* Space below the gallery */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2rem;
 }
 
 .image-gallery h5 {
     font-size: 1.5rem;
-    color: white; 
+    color: white;
     margin-bottom: 1rem;
-    text-align: center; 
+    text-align: center;
 }
 
 .image-gallery img {
-    max-width: 15%; 
+    max-width: 15%;
     height: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .image-gallery img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
     filter: brightness(1) invert(0);
 }
-/* Remove all background styling */
 
-  
-  /* Section styling */
-  .section-g-container {
+.section-g-container {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
-  }
-  
-  .section-g-left {
-    width: 100%; /* Full width for left alignment */
-  }
-  
-  .section-g-content-grid {
+}
+
+.section-g-left {
+    width: 100%;
+}
+
+.section-g-content-grid {
     display: grid;
-    grid-template-columns: 5cm 5cm; /* Column width 5 cm */
-    grid-template-rows: 5cm 5cm; /* Row height 5 cm */
+    grid-template-columns: 5cm 5cm;
+    grid-template-rows: 5cm 5cm;
     gap: 10px;
     margin-top: 20px;
-  }
-  
-  .content-item {
+}
+
+.content-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
     box-sizing: border-box;
-  }
-  
-  .content-item h3 {
+}
+
+.content-item h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
-  }
-  
-  .content-item span {
+}
+
+.content-item span {
     font-size: 1em;
     line-height: 1.5;
-  }
-  
-  .section-g-bottom {
+}
+
+.section-g-bottom {
     margin-top: 30px;
-  }
-  
-  .get-started {
+}
+
+.get-started {
     display: flex;
     align-items: center;
     margin-top: 10px;
-  }
-  
-  .get-started-link {
+}
+
+.get-started-link {
     font-size: 1.2em;
     text-decoration: none;
     margin-right: 10px;
-  }
-  
-  .right-arrow {
+}
+
+.right-arrow {
     font-size: 1.5em;
-    color:pink; /* Pink color */
-  }
-  
-/* For tablets and medium-sized devices */
+    color:pink;
+}
+
 @media (max-width: 768px) {
     .new-component {
-        padding: 10px; /* Adjust padding for smaller devices */
+        padding: 10px;
     }
 
     .image-gallery img {
-        max-width: 25%; /* Adjust image size for tablets */
+        max-width: 25%;
     }
 
     .section-g-left h2 {
-        font-size: 2rem; /* Reduce heading size */
+        font-size: 2rem;
     }
 
     .section-g-left span {
-        font-size: 1rem; /* Adjust paragraph font size */
+        font-size: 1rem;
     }
 
     .section-g-container {
@@ -129,15 +122,14 @@
     }
 }
 
-/* For mobile devices */
 @media (max-width: 480px) {
     .new-component {
-        background-size: cover; /* Ensures good fit for mobile */
+        background-size: cover;
         padding: 10px;
     }
 
     .image-gallery img {
-        max-width: 35%; /* Adjust image size for small screens */
+        max-width: 35%;
     }
 
     .section-g-left h2 {
@@ -152,13 +144,14 @@
         padding: 1rem;
     }
 }
+
 h5 {
-    text-align: left; /* Align the text to the left */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-    font-size: 1rem; /* Adjust font size as needed */
-    font-weight: normal; /* Set a default font weight */
-    color: #333; /* Customize the text color */
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #333;
     margin-top: 1rem;
     margin-left: 0rem;
 }
