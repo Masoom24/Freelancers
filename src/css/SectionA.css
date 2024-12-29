@@ -1,0 +1,164 @@
+/* Section container with background image */
+.new-component {
+   
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    min-height: 100vh; /* Ensures the section covers the full viewport height */
+    width: 100%; /* Ensures the section spans the full viewport width */
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; 
+    padding: 20px; 
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* Image Gallery Section */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Ensures images wrap in smaller screens */
+    justify-content: center; /* Centers images horizontally */
+    gap: 20px; /* Space between images */
+    margin-bottom: 2rem; /* Space below the gallery */
+}
+
+.image-gallery h5 {
+    font-size: 1.5rem;
+    color: white; 
+    margin-bottom: 1rem;
+    text-align: center; 
+}
+
+.image-gallery img {
+    max-width: 15%; 
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); 
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); 
+    filter: brightness(1) invert(0);
+}
+/* Remove all background styling */
+
+  
+  /* Section styling */
+  .section-g-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .section-g-left {
+    width: 100%; /* Full width for left alignment */
+  }
+  
+  .section-g-content-grid {
+    display: grid;
+    grid-template-columns: 5cm 5cm; /* Column width 5 cm */
+    grid-template-rows: 5cm 5cm; /* Row height 5 cm */
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .content-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .content-item span {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .section-g-bottom {
+    margin-top: 30px;
+  }
+  
+  .get-started {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .get-started-link {
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .right-arrow {
+    font-size: 1.5em;
+    color:pink; /* Pink color */
+  }
+  
+/* For tablets and medium-sized devices */
+@media (max-width: 768px) {
+    .new-component {
+        padding: 10px; /* Adjust padding for smaller devices */
+    }
+
+    .image-gallery img {
+        max-width: 25%; /* Adjust image size for tablets */
+    }
+
+    .section-g-left h2 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    .section-g-left span {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+
+    .section-g-container {
+        padding: 1.5rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .new-component {
+        background-size: cover; /* Ensures good fit for mobile */
+        padding: 10px;
+    }
+
+    .image-gallery img {
+        max-width: 35%; /* Adjust image size for small screens */
+    }
+
+    .section-g-left h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-g-left span {
+        font-size: 0.9rem;
+    }
+
+    .section-g-container {
+        padding: 1rem;
+    }
+}
+h5 {
+    text-align: left; /* Align the text to the left */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: normal; /* Set a default font weight */
+    color: #333; /* Customize the text color */
+    margin-top: 1rem;
+    margin-left: 0rem;
+}

@@ -1,0 +1,139 @@
+/* Footer Container */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    background-color: #222;
+    padding: 3rem 2rem;
+    color: #fff;
+    text-align: left;
+}
+
+/* Footer Column */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.footer-column p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column p a:hover {
+    color: #ff007f;
+}
+
+/* Specific Styling for Freelancer Bold Text */
+.footer-column .bold {
+    font-weight: bold;
+}
+
+/* Logo and Language Section */
+.footer-column .logo img {
+    width: 120px;
+    margin-right: 1rem;
+}
+
+.footer-column .logo p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.language-selector {
+    font-size: 1.2rem;
+}
+
+/* App Icons */
+.app-icons img {
+    width: 120px;
+    margin-right: 1rem;
+}
+
+/* Social Icons */
+.social-icons svg {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.social-icons svg:hover {
+    color: #ff007f;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    /* Tablet and smaller devices */
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+    .footer-column h3 {
+        font-size: 1.2rem;
+    }
+    .footer-column p {
+        font-size: 0.9rem;
+    }
+    .app-icons img {
+        width: 100px;
+    }
+    .social-icons svg {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile devices */
+    .footer-container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        padding: 2rem 1rem;
+    }
+    .footer-column h3 {
+        font-size: 1.1rem; /* Smaller font size for mobile */
+        margin-bottom: 0.8rem;
+    }
+    .footer-column p {
+        font-size: 0.85rem; /* Adjust font size */
+        margin: 0.4rem 0;
+    }
+    .footer-column .logo img {
+        width: 100px; /* Adjust logo size */
+        margin-right: 0.5rem;
+    }
+    .app-icons img {
+        width: 90px; /* Smaller app icon size for mobile */
+    }
+    .social-icons svg {
+        font-size: 1.4rem; /* Adjust social icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Very small devices like phones in portrait mode */
+    .footer-container {
+        padding: 1rem;
+    }
+    .footer-column h3 {
+        font-size: 1rem;
+    }
+    .footer-column p {
+        font-size: 0.8rem;
+    }
+    .app-icons img {
+        width: 80px;
+    }
+    .social-icons svg {
+        font-size: 1.3rem;
+    }
+}

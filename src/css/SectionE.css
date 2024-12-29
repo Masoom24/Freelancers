@@ -1,0 +1,134 @@
+/* Section E Container */
+.section-e-container {
+    background-color: #000;
+    padding: 4rem 2rem;
+    color: #fff;
+}
+
+.section-e-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+/* Left Column - Get work done in 2700 categories */
+.section-e-left {
+    flex: 1;
+}
+
+.section-e-left h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+}
+
+.section-e-left .pink-text {
+    color: #ff007f; /* Pink color */
+    font-weight: bold;
+}
+
+/* Right Column - Categories */
+.section-e-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 1rem;
+    width: 100%;
+}
+
+.category-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-column li {
+    margin-bottom: 1rem;
+}
+
+.category-column a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.category-column a:hover {
+    color: #ff007f; /* Pink color on hover */
+}
+
+/* View More link in the last column */
+.category-column .pink-text {
+    color: #ff007f;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .section-e-content {
+        flex-direction: column; /* Stack left and right columns vertically */
+        gap: 2rem;
+    }
+
+    .section-e-left h2 {
+        font-size: 1.7rem; /* Adjust text size for smaller screens */
+    }
+
+    .section-e-right {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+
+    .category-column a {
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+
+    .category-column li {
+        margin-bottom: 1rem; /* Adjust spacing between items */
+    }
+}
+
+/* For Tablets and Mobile Devices */
+@media (max-width: 768px) {
+    .section-e-left h2 {
+        font-size: 1.5rem; /* Adjust text size */
+    }
+
+    .section-e-content {
+        flex-direction: column; /* Stack left and right columns vertically */
+        gap: 2rem;
+    }
+
+    .section-e-right {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+    }
+
+    .category-column a {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .category-column li {
+        margin-bottom: 0.8rem; /* Reduce space between list items */
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    .section-e-container {
+        padding: 2rem 1rem; /* Reduce padding for mobile */
+    }
+
+    .section-e-left h2 {
+        font-size: 1.3rem; /* Further reduce text size for mobile */
+    }
+
+    .section-e-right {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+    }
+
+    .category-column a {
+        font-size: 0.8rem; /* Adjust font size further for mobile */
+    }
+
+    .category-column li {
+        margin-bottom: 0.6rem; /* Decrease list item spacing on mobile */
+    }
+}

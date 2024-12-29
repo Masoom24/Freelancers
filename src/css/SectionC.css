@@ -1,0 +1,163 @@
+/* General Section Styling */
+.section-c {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    background-color: black;
+
+}
+
+.section-c.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Content Styling */
+.content {
+    flex: 1;
+    max-width: 50%;
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.make-it-real {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.freelancer {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ff007f;
+    margin-bottom: 2rem;
+}
+
+.features {
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* CTA Styling */
+.cta {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.get-started-link {
+    font-size: 1rem;
+    color: white;
+    background-color: #ff007f;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-link:hover {
+    background-color: #e60072;
+}
+
+/* Empty Right Space */
+.section-c::after {
+    content: '';
+    flex: 1;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets and medium-sized devices */
+@media (max-width: 768px) {
+    .section-c {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .make-it-real {
+        font-size: 2rem;
+    }
+
+    .freelancer {
+        font-size: 1.5rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature-item p {
+        font-size: 1rem;
+    }
+
+    .get-started-link {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .section-c::after {
+        display: none;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .section-c {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .make-it-real {
+        font-size: 1.8rem;
+    }
+
+    .freelancer {
+        font-size: 1.2rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1rem;
+    }
+
+    .feature-item p {
+        font-size: 0.9rem;
+    }
+
+    .get-started-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
